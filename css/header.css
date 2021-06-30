@@ -430,14 +430,23 @@ section, footer {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  bottom: 0;
+  bottom: -100%;
   width: 425px;
   max-width: 100%;
-  display: none;
   -webkit-transition: all 0s;
   -o-transition: all 0s;
   transition: all 0s;
-  height: 1000px;
+  height: 100%;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.menu-nav-active {
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  bottom: 0;
 }
 
 .menu-nav .overlay {
