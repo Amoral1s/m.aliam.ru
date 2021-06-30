@@ -427,26 +427,28 @@ section, footer {
   z-index: 40;
   bottom: 0;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  bottom: -100%;
+  -webkit-transform: translateX(-50%) translateY(100%);
+      -ms-transform: translateX(-50%) translateY(100%);
+          transform: translateX(-50%) translateY(100%);
+  bottom: 0;
   width: 425px;
   max-width: 100%;
   -webkit-transition: all 0s;
   -o-transition: all 0s;
   transition: all 0s;
   height: 100%;
-  -webkit-transition: bottom .3s;
-  -o-transition: bottom .3s;
-  transition: bottom .3s;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
 }
 
 .menu-nav-active {
-  -webkit-transition: bottom .3s;
-  -o-transition: bottom .3s;
-  transition: bottom .3s;
-  bottom: 0;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  -webkit-transform: translateX(-50%) translateY(0%);
+      -ms-transform: translateX(-50%) translateY(0%);
+          transform: translateX(-50%) translateY(0%);
 }
 
 .menu-nav .overlay {
