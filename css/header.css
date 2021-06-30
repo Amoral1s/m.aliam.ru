@@ -435,9 +435,9 @@ section, footer {
   height: 100%;
   max-width: 100%;
   display: none;
-  -webkit-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0s;
+  -o-transition: all 0s;
+  transition: all 0s;
 }
 
 .menu-nav .overlay {
@@ -449,9 +449,6 @@ section, footer {
   bottom: 0;
   width: 100%;
   height: 100%;
-  -webkit-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
 }
 
 .menu-nav-container {
