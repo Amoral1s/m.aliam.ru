@@ -47,6 +47,8 @@
         position: static
 
 .about
+  padding-left: 15px
+  padding-right: 15px
   .title
     text-align: center
   &>p
@@ -429,9 +431,61 @@
     font-size: 12px  
 
 
-
-
-
+.overlay-popup
+  width: $bodywidth
+  position: fixed
+  top: 0
+  left: 50%
+  transform: translateX(-50%)
+  height: 100%
+  background-color: rgba(#EEF3F6, .5)
+  z-index: 50
+  display: none
+#thx
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  background-color: #fff
+  border-radius: 15px
+  padding: 40px 25px 25px 25px
+  max-width: 340px
+  z-index: 100
+  display: none
+  p
+    text-align: center
+    margin-bottom: 25px
+  .button
+    border-radius: 10px
+    height: 45px
+.popup
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 80
+  width: 340px
+  max-width: calc(100% - 30px)
+  background: #C7E5FA
+  box-shadow: 0px 10px 30px rgba(122, 122, 122, 0.2)
+  border-radius: 15px
+  padding: 40px 20px 20px 20px
+  display: none
+  h4
+    font-size: 21px
+    text-align: center
+    margin-bottom: 30px
+  &-row
+    margin-bottom: 15px
+  input
+    background-color: #FAFDFF
+    height: 50px
+    border-radius: 10px
+  input[type="submit"]
+    margin-top: 35px
+    background-color: #38A3EE
+    filter: drop-shadow(0px 10px 30px rgba(19, 141, 225, 0.32))
+    font-size: 15px
 
 
 

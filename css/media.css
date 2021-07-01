@@ -1,0 +1,39 @@
+@media (max-height: 590px) {
+  .popup {
+    padding: 15px;
+  }
+  .popup h4 {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  .popup-row {
+    margin-bottom: 5px;
+  }
+  .popup-row input {
+    height: 40px;
+  }
+  .popup-row input[type="submit"] {
+    margin-top: 15px;
+  }
+  .menu-nav ul li a {
+    font-size: 15px;
+    height: 35px;
+  }
+  .menu-nav-social {
+    min-height: 35px;
+    height: 35px;
+  }
+  .menu-nav-social a {
+    height: 25px;
+  }
+  .menu-nav-social a img {
+    height: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .footer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

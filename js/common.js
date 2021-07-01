@@ -11,8 +11,21 @@ jQuery(document).ready(function ($) {
     $('.menu-services .close').slideToggle(200);
     $('.menu-services .open').slideToggle(200);
     $('.menu-nav').toggleClass('menu-nav-active');
+  });
 
-    
+  $('.call-message').on('click', function() {
+    $('.overlay-popup').fadeIn(200);
+    $('.popup-consult').fadeIn(200);
+  });
+  $('.overlay-popup').on('click', function() {
+    $('.overlay-popup').fadeOut(200);
+    $('.popup').fadeOut(200);
+    $('#thx').fadeOut(200);
+  });
+  $('.close').on('click', function() {
+    $('.overlay-popup').fadeOut(200);
+    $('.popup').fadeOut(200);
+    $('#thx').fadeOut(200);
   });
 
   $('.menu-nav-container').on('click', function(e) {

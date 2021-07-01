@@ -79,6 +79,11 @@
   position: static;
 }
 
+.about {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .about .title {
   text-align: center;
 }
@@ -770,4 +775,90 @@
   color: #7B7B7B;
   text-align: center;
   font-size: 12px;
+}
+
+.overlay-popup {
+  width: 425px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 100%;
+  background-color: rgba(238, 243, 246, 0.5);
+  z-index: 50;
+  display: none;
+}
+
+#thx {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #fff;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  padding: 40px 25px 25px 25px;
+  max-width: 340px;
+  z-index: 100;
+  display: none;
+}
+
+#thx p {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#thx .button {
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  height: 45px;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 80;
+  width: 340px;
+  max-width: -webkit-calc(100% - 30px);
+  max-width: calc(100% - 30px);
+  background: #C7E5FA;
+  -webkit-box-shadow: 0px 10px 30px rgba(122, 122, 122, 0.2);
+          box-shadow: 0px 10px 30px rgba(122, 122, 122, 0.2);
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  padding: 40px 20px 20px 20px;
+  display: none;
+}
+
+.popup h4 {
+  font-size: 21px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.popup-row {
+  margin-bottom: 15px;
+}
+
+.popup input {
+  background-color: #FAFDFF;
+  height: 50px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+}
+
+.popup input[type="submit"] {
+  margin-top: 35px;
+  background-color: #38A3EE;
+  -webkit-filter: drop-shadow(0px 10px 30px rgba(19, 141, 225, 0.32));
+          filter: drop-shadow(0px 10px 30px rgba(19, 141, 225, 0.32));
+  font-size: 15px;
 }
