@@ -411,7 +411,7 @@ section, footer {
       -ms-flex-align: end;
           align-items: flex-end;
   padding: 8px 25px;
-  padding-bottom: 16px;
+  padding-bottom: 20px;
   position: fixed;
   z-index: 50;
   bottom: 0;
