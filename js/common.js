@@ -136,6 +136,25 @@ jQuery(document).ready(function ($) {
     }
     
   });
+
+  $('.contacts-another-wrap-item-title').on('click', function() {
+
+    if ($(this).hasClass('contacts-another-wrap-item-title-active')) {
+      $(this).removeClass('contacts-another-wrap-item-title-active');
+      $('.contacts-another-wrap-item-links').slideUp(200);
+
+    } else {
+      $('.contacts-another-wrap-item-title').removeClass('contacts-another-wrap-item-title-active');
+      $('.contacts-another-wrap-item-links').slideUp(200);
+
+
+      $(this).addClass('contacts-another-wrap-item-title-active');
+      $(this).next().slideDown(200);
+    }
+    
+  });
+
+
   $('.page-feed-moar').on('click', function() {
     $('.page-feed-wrap-item').slideDown(200);
     $(this).hide();

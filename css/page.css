@@ -552,3 +552,161 @@
 .page-feed-form-row label {
   font-weight: 600;
 }
+
+.contacts {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 0;
+}
+
+.contacts .title {
+  text-align: center;
+}
+
+.contacts > p {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contacts-center p {
+  text-align: center;
+}
+
+.contacts-center h3 {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 15px;
+}
+
+.contacts-center .contacts-links {
+  margin-top: 30px;
+}
+
+.contacts-links {
+  max-width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacts-links a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.contacts-links a p {
+  color: #031421;
+  margin-left: 7px;
+  font-size: 17px;
+}
+
+.contacts-another {
+  margin-top: 70px;
+}
+
+.contacts-another > p {
+  text-align: center;
+}
+
+.contacts-another-wrap {
+  margin-top: 30px;
+}
+
+.contacts-another-wrap-item {
+  padding-left: 40px;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.contacts-another-wrap-item-title {
+  margin-bottom: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+.contacts-another-wrap-item-title:hover h4 {
+  color: #138DE2;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+
+.contacts-another-wrap-item-title::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  height: 8px;
+  width: 12px;
+  background-image: url(../img/contacts/arr.svg);
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-position: center;
+}
+
+.contacts-another-wrap-item-title h4 {
+  font-size: 20px;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+
+.contacts-another-wrap-item-title-active h4 {
+  color: #138DE2;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+
+.contacts-another-wrap-item-title-active::after {
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transform: translateY(-50%) rotate(180deg);
+      -ms-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
+}
+
+.contacts-another-wrap-item::after {
+  position: absolute;
+  content: '';
+  height: 24px;
+  width: 24px;
+  top: 0;
+  left: 0;
+  background-image: url(../img/contacts/map.svg);
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-position: center;
+}
+
+.contacts-another-wrap-item-links {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.contacts-another-wrap-item-links a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.contacts-another-wrap-item-links a p {
+  color: #031421;
+  margin-left: 7px;
+  font-size: 17px;
+}

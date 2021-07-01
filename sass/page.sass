@@ -328,6 +328,99 @@
     label
       font-weight: 600
 
+.contacts
+  padding-left: 15px
+  padding-right: 15px
+  padding-bottom: 0
+  .title
+    text-align: center
+  &>p
+    text-align: center
+    margin-bottom: 40px
+  &-center
+    p
+      text-align: center
+    h3
+      text-align: center
+      font-size: 28px
+      margin-top: 15px
+    .contacts-links
+      margin-top: 30px
+  &-links
+    max-width: 180px
+    margin-left: auto
+    margin-right: auto
+    a
+      display: flex
+      margin-bottom: 15px
+      p
+        color: $dark
+        margin-left: 7px
+        font-size: 17px
+  &-another
+    margin-top: 70px  
+    &>p
+      text-align: center
+    &-wrap
+      margin-top: 30px
+      &-item
+        padding-left: 40px  
+        position: relative
+        margin-bottom: 25px
+        &-title
+          margin-bottom: 15px
+          position: relative
+          cursor: pointer
+          &:hover
+            h4
+              color: $main
+              transition: .2s
+          &::after
+            position: absolute
+            content: ''
+            top: 50%
+            right: 0
+            transform: translateY(-50%)
+            transition: .2s
+            height: 8px
+            width: 12px
+            background-image: url(../img/contacts/arr.svg)
+            background-repeat: no-repeat
+            background-size: contain
+            background-position: center
+          h4
+            font-size: 20px
+            transition: .2s
+          &-active
+            h4
+              color: $main
+              transition: .2s
+            &::after
+              transition: .2s
+              transform: translateY(-50%) rotate(180deg)
+        &::after
+          position: absolute
+          content: ''
+          height: 24px
+          width: 24px
+          top: 0
+          left: 0
+          background-image: url(../img/contacts/map.svg)
+          background-repeat: no-repeat
+          background-size: contain
+          background-position: center
+        &-links
+          margin-left: auto
+          margin-right: auto
+          margin-bottom: 20px
+          display: none
+          a
+            display: flex
+            margin-bottom: 15px
+            p
+              color: $dark
+              margin-left: 7px
+              font-size: 17px
 
 
 
