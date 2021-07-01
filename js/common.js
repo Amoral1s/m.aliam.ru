@@ -126,6 +126,20 @@ jQuery(document).ready(function ($) {
   $('.footer-nav h3').on('click', function() {
     $('.footer-nav-menu').slideToggle(200);
   });
+  $('.feed-moar').on('click', function() {
+    if ($(this).prev().hasClass('page-feed-wrap-item-content-active')) {
+      $(this).prev().removeClass('page-feed-wrap-item-content-active');
+      $(this).text('Читать полностью');
+    } else {
+      $(this).prev().addClass('page-feed-wrap-item-content-active');
+      $(this).text('Свернуть');
+    }
+    
+  });
+  $('.page-feed-moar').on('click', function() {
+    $('.page-feed-wrap-item').slideDown(200);
+    $(this).hide();
+  });
 
   $('select').addClass('select');
 
