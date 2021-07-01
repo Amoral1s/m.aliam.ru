@@ -54,6 +54,41 @@ jQuery(document).ready(function ($) {
     nextArrow: '<div class="slider-arrow slick-prev"></div>'
   });
 
+  $('.page-deals-wrap').slick({
+    dots: false,
+    arrows: false,
+    infinite: false,
+    speed: 300,
+    rtl: false,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    prevArrow: '<div class="slider-arrow slick-next"></div>',
+    nextArrow: '<div class="slider-arrow slick-prev"></div>'
+  });
+  $('.services-about .services-wrap').slick({
+    dots: false,
+    arrows: false,
+    infinite: false,
+    speed: 300,
+    rtl: false,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    prevArrow: '<div class="slider-arrow slick-next"></div>',
+    nextArrow: '<div class="slider-arrow slick-prev"></div>'
+  });
+  
+  $('.page-team-wrap-item-content').slick({
+    dots: false,
+    arrows: false,
+    infinite: false,
+    speed: 300,
+    rtl: false,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    prevArrow: '<div class="slider-arrow slick-next"></div>',
+    nextArrow: '<div class="slider-arrow slick-prev"></div>'
+  });
+
   $('.answer-wrap-item').on('click', function(e) {
     if ($(this).hasClass('answer-wrap-item-active')) {
         $(this).children('.answer-wrap-item-text').slideUp(200);
@@ -64,6 +99,19 @@ jQuery(document).ready(function ($) {
         $(this).children('.answer-wrap-item-text').slideDown(200);
         $(this).addClass('answer-wrap-item-active');
     }
+  });
+  
+  $('.page-team-wrap-item-title').on('click', function() {
+    if ($(this).hasClass('page-team-wrap-item-title-active')) {
+      $('.page-team-wrap-item-title').removeClass('page-team-wrap-item-title-active');
+      $('.page-team-wrap-item-content').removeClass('page-team-wrap-item-content-active');
+    } else {
+      $('.page-team-wrap-item-title').removeClass('page-team-wrap-item-title-active');
+      $('.page-team-wrap-item-content').removeClass('page-team-wrap-item-content-active');
+      $(this).toggleClass('page-team-wrap-item-title-active');
+      $(this).next().toggleClass('page-team-wrap-item-content-active');
+    }
+    
   });
 
   $('.video-wrap').on('click', function() {
