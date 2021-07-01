@@ -185,6 +185,18 @@ jQuery(document).ready(function ($) {
     $(this).hide();
   });
 
+  if (navigator.share) { // Проверяем поддержку функционала браузера
+    button = jQuery('.share'); // Класс кнопки "поделиться"
+    button.show().on('click', function () {
+      navigator.share({
+        title: jQuery(this).data('title'),
+        text: jQuery(this).data('text'),
+        url: jQuery(this).data('url'),
+      });
+      return false;
+    });
+  } 
+
   $('select').addClass('select');
 
   $('.select').each(function() {

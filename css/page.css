@@ -826,6 +826,7 @@
   width: 100%;
   font-size: 21px;
   color: #138DE2;
+  display: block;
 }
 
 .single-content {
