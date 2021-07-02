@@ -82,9 +82,14 @@ input[type="text"], input[type="tel"], input[type="password"], input[type="email
 textarea {
   resize: none;
   width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   max-height: 100px;
   padding: 10px 15px;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 input[type="text"], input[type="tel"], input[type="submit"], button {
@@ -93,6 +98,7 @@ input[type="text"], input[type="tel"], input[type="submit"], button {
        appearance: none;
   padding: 10px 15px;
   width: 100%;
+  border: none;
 }
 
 input[type="submit"], button {
