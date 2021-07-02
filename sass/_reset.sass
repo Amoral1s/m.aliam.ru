@@ -53,7 +53,6 @@ input, button, select, textarea
 input[type="text"],input[type="tel"], input[type="password"],input[type="email"]
 	box-shadow: none
 	width: 100%
-	max-width: 320px
 	padding: 10px 15px
 textarea
 	resize: none
@@ -68,7 +67,6 @@ input[type="text"],input[type="tel"],input[type="submit"],button
 	appearance: none
 	padding: 10px 15px
 	width: 100%
-	max-width: 320px
 input[type="submit"],button
 	cursor: pointer
 	
@@ -161,59 +159,3 @@ section, footer
 .flex
 	display: flex
 	
-.select 
-	display: block
-	max-width: 320px
-	width: 100%
-	position: relative
-.new-select 
-	position: relative
-	border: 1px solid rgba(0, 0, 0, 0.1)
-	padding: 10px 15px
-	cursor: pointer
-	user-select: none
-
-
-.new-select__list 
-	position: absolute
-	top: 45px
-	left: 0
-	border: 1px solid rgba(0, 0, 0, 0.1)
-	cursor: pointer
-	width: 100%
-	max-width: 320px
-	z-index: 2
-	background: #fff
-	user-select: none
-.new-select__list.on 
-	display: block
-.new-select__item span 
-	display: block
-	padding: 10px 15px
-.new-select__item span:hover 
-	color: blue
-.new-select:after 
-	content: ''
-	display: block
-	width: 15px
-	height: 15px
-	position: absolute
-	right: 9px
-	top: 13px
-	background: url('../img/icons/select.svg') no-repeat right center / cover
-	opacity: 0.6
-	-webkit-transition: all .27s ease-in-out
-	-o-transition: all .27s ease-in-out
-	transition: all .27s ease-in-out
-	-webkit-transform: rotate(0deg)
-	-ms-transform: rotate(0deg)
-	-o-transform: rotate(0deg)
-	transform: rotate(0deg)
-.new-select.on:after 
-	-webkit-transform: rotate(180deg)
-	-ms-transform: rotate(180deg)
-	-o-transform: rotate(180deg)
-	transform: rotate(180deg)
-
-	
-
