@@ -1,4 +1,35 @@
 jQuery(document).ready(function ($) {
+
+  const videoItem = document.querySelectorAll('.videos-wrap-item');
+  const videoSortItem = document.querySelectorAll('.videos-sort-item');
+
+  if (videoSortItem.length > 0) {
+    videoSortItem.forEach((elem) => {
+      elem.addEventListener('click', () => {
+        videoItem.forEach((vidElem) => {
+          if (elem.dataset.index == 0) {
+            vidElem.style.display = 'block';
+          } else {
+            if (vidElem.dataset.index == elem.dataset.index) {
+              vidElem.style.display = 'block';
+            } else {
+              vidElem.style.display = 'none';
+            }
+          }
+        });
+      });
+    });
+  }
+
+  if (videoItem.length > 0) {
+    videoItem.forEach((elem) => {
+      elem.addEventListener('click', () => {
+        elem.children[0].remove();
+        elem.children[0].style.display = 'block';
+        elem.children[0].src = elem.children[0].dataset.src;
+      });
+    });
+  }
   
   $('.call-menu').on('click', function() {
     if ($('.menu-nav').hasClass('menu-nav-active')) {
@@ -223,9 +254,20 @@ jQuery(document).ready(function ($) {
       blogMoar.remove();
     }
   }
+  const dealsItem = document.querySelectorAll('.all-deals-wrap-item');
+  if (dealsItem.length <= 3) {
+    const dealsMoar = document.querySelector('.all-deals-moar');
+    if (dealsMoar) {
+      dealsMoar.remove();
+    }
+  }
 
   $('.page-feed-moar').on('click', function() {
     $('.page-feed-wrap-item').slideDown(200);
+    $(this).hide();
+  });
+  $('.all-deals-moar').on('click', function() {
+    $('.all-deals-wrap-item').slideDown(200);
     $(this).hide();
   });
   $('.blog-wrap-moar').on('click', function() {
