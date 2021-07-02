@@ -194,6 +194,11 @@
 .question-wrap form input[type="tel"],
 .question-wrap form input[type="text"],
 .question-wrap form input[type="email"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-border-radius: 0;
+          border-radius: 0;
   background-color: #138DE2;
   border: none;
   border-bottom: 2px solid #fff;
@@ -732,6 +737,14 @@
 
 .footer-form form {
   position: relative;
+}
+
+.footer-form form input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .footer-form form input[type="submit"] {
