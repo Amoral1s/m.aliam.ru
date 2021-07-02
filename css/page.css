@@ -1862,17 +1862,13 @@
   font-size: 14px;
 }
 
-.videos {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .videos-sort {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   overflow-x: auto;
+  padding-left: 15px;
 }
 
 .videos-sort-item {
@@ -1904,7 +1900,9 @@
 }
 
 .videos-wrap {
+  padding-left: 15px;
   margin-top: 25px;
+  padding-right: 15px;
 }
 
 .videos-wrap-item {
