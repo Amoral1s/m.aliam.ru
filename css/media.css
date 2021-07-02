@@ -32,15 +32,31 @@
 }
 
 @media (max-width: 360px) {
+  .single-services-cost-wrap-item b {
+    font-size: 20px;
+  }
+  .single-services-cost-wrap-item b span {
+    font-size: 12px;
+  }
+  .single-services-cost-wrap-item:last-child .button,
+  .single-services-situation .button {
+    font-size: 13px;
+  }
   .title {
     font-size: 30px;
   }
   .page-team-wrap-item-title h3 {
     font-size: 17px;
   }
-  .services-about .services-wrap-item {
+  .services-about .services-wrap-item,
+  .franchise-services .services-wrap-item {
     padding-left: 15px;
     padding-right: 15px;
+    height: 280px;
+  }
+  .services-about .services-wrap-item h3,
+  .franchise-services .services-wrap-item h3 {
+    max-width: 142px;
   }
   .services-wrap-item h3 {
     font-size: 18px;

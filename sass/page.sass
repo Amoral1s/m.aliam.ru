@@ -9,7 +9,7 @@
   &>p
     text-align: center
     font-size: 17px
-    color: #1D263A
+    color: $gray
     padding-left: 20px
     padding-right: 20px
   &-content
@@ -77,6 +77,7 @@
     padding-right: 15px
   &>p
     padding-right: 15px
+    color: $gray
   .services-wrap
     margin-left: -15px
     .slick-list
@@ -167,6 +168,7 @@
   &>p
     padding-right: 15px
     padding-left: 15px
+    color: $gray
   &-wrap
     margin-top: 30px
     padding-left: 15px
@@ -247,7 +249,7 @@
       margin-left: 15px
       transform: rotate(180deg)
   &>p
-    color: #031421
+    color: $gray
     text-align: center
     padding-left: 10px
     padding-right: 10px
@@ -500,6 +502,26 @@
     display: block
   &-content
     margin-top: 20px
+    ul
+      padding-top: 10px
+      display: block
+      padding-bottom: 10px
+      li
+        padding-left: 35px
+        position: relative
+        margin-bottom: 15px
+        &::after
+          position: absolute
+          content: ''
+          height: 20px
+          width: 20px
+          left: 0
+          top: 50%
+          transform: translateY(-50%)
+          background-image: url(../img/icons/li.svg)
+          background-repeat: no-repeat
+          background-position: center
+          background-size: contain
     h2
       font-size: 26px
       margin-bottom: 15px
@@ -618,25 +640,355 @@
       label
         font-weight: 600
 
+.franchise
+  padding-left: 15px
+  padding-right: 15px
+  padding-bottom: 60px
+  &-consult
+    &>p
+      text-align: center
+      font-weight: 600
+      max-width: 320px
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 30px
+      color: $gray
+  &-garanty
+    padding-left: 15px
+    padding-right: 15px
+    padding-bottom: 60px
+    h2
+      font-size: 28px
+      margin-bottom: 30px
+    &-wrap
+      &-item
+        margin-bottom: 30px
+        h3
+          font-size: 15px
+          margin-bottom: 5px
+          margin-top: 10px
+  &-services
+    .services-about-link
+      padding-left: 15px
+      padding-right: 15px
+    .services-wrap-item
+      max-width: calc(100% - 40px)!important
+      margin-right: 15px
+      height: 260px
+      h3
+        margin-bottom: 35px
+        max-width: 70%
+      .icon
+        bottom: auto
+        top: 20px
+        right: 20px
+        max-width: 80px
+      .arrow
+        left: auto
+        right: 20px
+      p
+        line-height: 1.9
+    .slick-list
+      padding-right: 40px
+      padding-left: 15px
+    h2
+      font-size: 28px
+      padding: 0 15px
+      margin-bottom: 15px
+    &>p
+      color: #031421
+      padding: 0 15px
+  &-partners
+    padding-top: 70px
+    padding-bottom: 0px
+    h2
+      font-size: 28px
+      margin-bottom: 30px
+    h3
+      font-size: 17px
+    p
+      margin-bottom: 30px
+  &-offer
+    h2
+      font-size: 20px
+    .button
+      height: 45px
+      font-size: 15px
+      border-radius: 10px
+  &>p
+    color: #1D263A
 
+.page-services
+  padding-bottom: 0
 
+.single-services
+  padding-left: 15px
+  padding-right: 15px
+  padding-bottom: 40px
+  &-how
+    h2
+      padding-left: 15px
+      padding-right: 15px
+      font-size: 28px
+    &-call
+      padding-left: 15px
+      padding-right: 15px
+      .button
+        height: 45px
+        border-radius: 10px
+        font-size: 15px
+    &-wrap
+      .slick-list
+        padding-right: 50px
+        padding-left: 15px
+      &-item
+        background: #FAFDFF
+        border-radius: 15px
+        filter: drop-shadow(0px 10px 30px rgba(122, 122, 122, 0.2))
+        padding: 35px 15px
+        display: block
+        min-height: 250px
+        margin-right: 15px
+        margin-bottom: 30px
+        margin-top: 40px
+        h3
+          text-align: center
+          font-size: 24px
+          margin-top: 10px
+          margin-bottom: 10px
+        img
+          margin: auto
+          display: block
+  &>p
+    color: $gray
+    font-size: 17px
+    margin-bottom: 30px
+  &-what
+    margin-top: 80px
+    h2
+      font-size: 28px
+      margin-bottom: 30px
+    &-item
+      margin-bottom: 30px
+      h3
+        font-size: 18px
+        margin-bottom: 8px
+  &-situation
+    h2
+      font-size: 21px
+      margin-bottom: 30px
+    .button
+      height: 45px
+      font-size: 15px
+      border-radius: 10px
+    &-item
+      margin-bottom: 30px
+      padding-left: 60px
+      position: relative
+      .num
+        position: absolute
+        left: 0
+        top: 0
+        height: 40px
+        width: 40px
+        background-color: $main
+        border-radius: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #fff
+      h3
+        font-size: 18px
+        margin-bottom: 8px
+      p
+        color: $gray
+  &-who
+    h2
+      font-size: 28px
+      margin-bottom: 30px
+      padding-left: 15px
+      padding-right: 15px   
+    &-link
+      margin: 30px auto 0 auto
+      width: 100%
+      padding-left: 15px
+      display: flex
+      align-items: center
+      color: $main
+      font-size: 18px
+      cursor: pointer
+      img
+        margin-left: 15px
+    &-wrap
+      padding-left: 15px
+      margin-top: 40px
+      .slick-list
+        padding-right: 50px
+      &-item
+        position: relative
+        margin-left: 0
+        left: 0
+        height: 360px
+        margin-right: 15px
+        img
+          height: 360px
+          width: 100%
+          object-fit: cover
+          object-position: top center
+        .button
+          position: absolute
+          height: 70px
+          bottom: 15px
+          left: 15px
+          width: calc(100% - 30px)
+          display: flex
+          flex-direction: column
+          align-items: center
+        img
+          border-radius: 15px
+          object-fit: cover
+          object-position: top center
+        p
+          font-size: 17px
+          font-weight: 600
+        b
+          color: $main
+          font-weight: 600
+  &-cost
+    padding-bottom: 0
+    h2
+      font-size: 28px
+      padding-left: 15px
+      padding-right: 15px
+    &-wrap
+      .slick-list
+        padding-right: 50px
+        padding-left: 15px
+      &-item
+        display: flex
+        flex-direction: column
+        align-items: center
+        background: #FAFDFF
+        box-shadow: 0px 10px 30px rgba(122, 122, 122, 0.2)
+        border-radius: 15px
+        margin-bottom: 40px
+        margin-top: 40px
+        padding: 50px 25px 40px 25px
+        margin-right: 15px
+        h3
+          font-size: 24px
+          margin-bottom: 15px
+        b
+          color: $main
+          margin-top: 15px
+          font-size: 28px
+          position: relative
+          display: flex
+          align-items: flex-start
+          span
+            color: $dark
+            font-size: 16px
+            font-weight: 400
+            width: max-content
+            margin-left: 8px
+        &:last-child
+          background-color: $main
+          color: #fff
+          padding: 20px
+          padding-top: 40px
+          .button
+            border-radius: 10px
+            width: 100%
+            height: 60px
+            margin-top: 30px
+  &-do
+    padding-left: 15px
+    padding-right: 15px
+    padding-bottom: 0
+    h2
+      font-size: 17px
+      margin-bottom: 10px
+    ul
+      margin-bottom: 30px
+      li
+        padding-left: 30px
+        position: relative
+        margin-bottom: 10px
+        &::after
+          position: absolute
+          content: ''
+          left: 0
+          top: 50%
+          transform: translateY(-50%)
+          height: 10px
+          width: 10px
+          background-color: $main
+          border-radius: 50%
+    ul.check
+      li
+        padding-left: 30px
+        &::after
+          display: none
+        &:before
+          position: absolute
+          content: ''
+          left: 0
+          top: 50%
+          transform: translateY(-50%)
+          height: 20px
+          width: 20px
+          border-radius: 50%
+          background-image: url(../img/icons/li.svg)
+          background-repeat: no-repeat
+          background-size: contain
+          background-position: center
+  &-form
+    padding-top: 0
+    padding-bottom: 80px
+    h3
+      padding-right: 20px
+      padding-left: 20px
 
+.call-question
+  padding-left: 15px
+  padding-right: 15px
+  padding-bottom: 0
+  h2
+    font-size: 28px
+    margin-bottom: 30px
+    text-align: center
+  &>p
+    text-align: center
+    color: $gray
+    margin-bottom: 30px
+    a
+      color: $main
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.ask
+  input, textarea
+    background: #FAFDFF;
+    border-radius: 10px
+    filter: drop-shadow(0px 10px 30px rgba(122, 122, 122, 0.2))
+    height: 45px
+    resize: none
+    font-size: 14px
+    margin-bottom: 15px
+    width: 100%
+    transition: .2s
+    max-width: 100%
+    display: flex
+    align-items: center
+    padding: 10px 15px
+    &:placeholder
+      font-size: 16px
+      display: flex
+      align-items: center
+  input[type="submit"]
+    background-color: #38A3EE
+  input[type="text"],
+  input[type="tel"]
+    transition: .2s
+    display: none
 
 
 
