@@ -1722,7 +1722,10 @@
 
 .single-answer h2 {
   font-size: 22px;
-  margin-bottom: 20px;
+}
+
+.single-answer form {
+  margin-top: 20px;
 }
 
 .single-answer-wrap {
